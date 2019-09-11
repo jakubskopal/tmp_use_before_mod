@@ -8,7 +8,7 @@ it will produce:
 ```
    Compiling example v0.1.0 (/home/jakubs/Work/Me/holochain/example)
 error[E0412]: cannot find type `Regex` in this scope
-  --> example.rs:10:32
+  --> not_working.rs:10:32
    |
 10 |     pub fn example() -> Option<Regex> {
    |                                ^^^^^ not found in this scope
@@ -20,7 +20,7 @@ help: possible candidates are found in other modules, you can import them into s
    |
 
 warning: unused import: `regex::Regex`
- --> example.rs:3:5
+ --> not_working.rs:3:5
   |
 3 | use regex::Regex;
   |     ^^^^^^^^^^^^
